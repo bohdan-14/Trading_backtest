@@ -1,9 +1,9 @@
 import unittest
 import pandas as pd
 import numpy as np
-from strategies.sma_cross import SMACrossStrategy
-from strategies.rsi_bb import RSIBBStrategy
-from strategies.vwap_reversion import VWAPReversionStrategy
+from TradingBacktest.strategies.sma_cross import SMACrossStrategy
+from TradingBacktest.strategies.rsi_bb import RSIBBStrategy
+from TradingBacktest.strategies.vwap_reversion import VWAPReversionStrategy
 
 class TestStrategies(unittest.TestCase):
     def setUp(self):

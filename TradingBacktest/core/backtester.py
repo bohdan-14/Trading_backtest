@@ -1,5 +1,4 @@
 import pandas as pd
-import vectorbt as vbt
 import plotly.graph_objects as go
 import os
 
@@ -36,10 +35,10 @@ class Backtester:
 
 if __name__ == "__main__":
     # Тестовий блок: завантажує дані, створює стратегії та запускає бектест.
-    from core.data_loader import DataLoader
-    from strategies.sma_cross import SMACrossStrategy
-    from strategies.rsi_bb import RSIBBStrategy
-    from strategies.vwap_reversion import VWAPReversionStrategy
+    from TradingBacktest.core.data_loader import DataLoader
+    from TradingBacktest.strategies.sma_cross import SMACrossStrategy
+    from TradingBacktest.strategies.rsi_bb import RSIBBStrategy
+    from TradingBacktest.strategies.vwap_reversion import VWAPReversionStrategy
     loader = DataLoader()
     data = loader.load_data()
     strategies = [SMACrossStrategy(data), RSIBBStrategy(data), VWAPReversionStrategy(data)]
